@@ -4,6 +4,8 @@ This Dockerfile builds a container for self-hosting the Ventipix Inventory Manag
 
 However, it does not include any Ventipix Files or Source Code, you'll have to mount those yourself to the `/var/www/html` directory (make sure to set correct chown).
 
+**I HIGHLY RECOMMEND YOU USE THESE FILES AS A STARTING POINT, AND ADJUST AND TWEAK THEM TO SUITE YOUR NEEDS.
+**
 ### Versions:
 
 #### PHP8.2
