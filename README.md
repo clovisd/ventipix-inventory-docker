@@ -7,22 +7,22 @@ However, it does not include any Ventipix Files or Source Code, you'll have to m
 **I HIGHLY RECOMMEND YOU USE THESE FILES AS A STARTING POINT, AND ADJUST AND TWEAK THEM TO SUITE YOUR NEEDS.**
 ### Versions:
 
-#### PHP8.2
+### PHP8.2
 Dockerfile8.2 features Ioncube 8.2 and should be the latest / newest version for the Ventipix Inv System.
 
-#### PHP8.1
+### PHP8.1
 Dockerfile8.1 features Ioncube 8.1 and should be good to go.
 
-#### PHP7.4
+### PHP7.4
 Haven't uploaded it as it's outdated / no longer recommend. May dig it up on request if needed but you're better off using the above files instead.
 
-### Building:
+## Building:
 Download / Create a `Dockerfile` in your source Directory including the content of your desired Dockerfile from this Repo.
 
 Then, run the following command to generate the Docker Container, replace `{tag}` with your desired name to use when building the container:
 `sudo docker build -t php:{tag} .`
+ You should now be able to use this Image to deploy your container.
 
-
-### Disclaimer
+## Disclaimer
 
 I've included these, but they're probably not as efficient / streamlined as could be and may make use of redundunt commands. Use at your own risk. 😉
