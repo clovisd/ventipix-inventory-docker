@@ -28,10 +28,10 @@ RUN docker-php-ext-configure pdo_mysql
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-enable pdo_mysql
 
-# Install and COnfigure OpenSSL (for SSL Emails)
+# Install and COnfigure OpenSSL (for SSL Emails) [NOT NEEDED]
 # RUN docker-php-ext-configure sendmail
 # RUN docker-php-ext-install sendmail
-RUN docker-php-ext-enable sendmail
+# RUN docker-php-ext-enable sendmail
 
 # ioncube loader
 RUN curl -fSL 'http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz' -o ioncube.tar.gz \
