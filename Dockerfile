@@ -2,7 +2,7 @@ FROM php:8.2-apache
 
 RUN apt-get -y update
 
-RUN apt-get install libjpeg62-turbo libjpeg62-turbo-dev libjpeg-dev
+RUN apt-get install -y libjpeg62-turbo libjpeg62-turbo-dev libjpeg-dev
 RUN apt-get install -y libicu-dev libzip-dev zlib1g-dev libpng-dev libgd3 libwebp-dev libfreetype-dev
 
 # Install and Configure Intl
@@ -44,7 +44,7 @@ RUN curl -fSL 'http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_li
 # phpini
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 RUN echo "zend_extension = /var/www/ioncube_loader_lin_8.2.so" >> "$PHP_INI_DIR/php.ini"
-RUN echo "upload_max_filesize = 2048M" >> "$PHP_INI_DIR/php.ini"
+RUN echo "upload_max_filesize = 256M" >> "$PHP_INI_DIR/php.ini"
 RUN echo "memory_limit = 256M" >> "$PHP_INI_DIR/php.ini"
 
 # apache
